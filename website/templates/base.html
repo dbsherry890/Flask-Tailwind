@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -14,10 +14,14 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
+    <link
+      href="{{url_for('static',filename='css/output.css')}}"
+      rel="stylesheet"
+    />
 
     <title>{% block title %}Home{% endblock %}</title>
   </head>
-  <body>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-slate-100">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button
         class="navbar-toggler"
@@ -87,5 +91,8 @@
       }
     </script>
     {% endblock %}
+    <div class="text-center text-2xl bg-green-300">
+      <p>Pleasework notes</p>
+    </div>
   </body>
 </html>
